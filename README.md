@@ -68,6 +68,35 @@ public class DictAspect {
 ### 3. 字典管理
    组件: DictManager (模拟数据库场景)
 
+## 运行结果
+
+```java
+2025-03-06T00:21:00.876+08:00  INFO 13400 --- [           main] org.example.Main                         : No active profile set, falling back to 1 default profile: "default"
+2025-03-06T00:21:01.510+08:00  INFO 13400 --- [           main] org.example.Main                         : Started Main in 0.948 seconds (process running for 1.282)
+执行切面方法
+Result(code: 200, msg: null, data: {"departmentId_text":"Department3","departmentId":3,"name":"test","id":0})
+执行切面方法
+Result(code: 200, msg: null, data: {"departmentId_text":"Department4","departmentId":4,"name":"test","id":1})
+执行切面方法
+Result(code: 200, msg: null, data: {"departmentId_text":"Department4","departmentId":4,"name":"test","id":2})
+执行切面方法
+Result(code: 200, msg: null, data: {"departmentId_text":"Department4","departmentId":4,"name":"test","id":3})
+执行切面方法
+Result(code: 200, msg: null, data: {"departmentId_text":"Department2","departmentId":2,"name":"test","id":4})
+执行切面方法
+Result(code: 200, msg: null, data: {"departmentId_text":"Department7","departmentId":7,"name":"test","id":5})
+执行切面方法
+Result(code: 200, msg: null, data: {"departmentId_text":"Department0","departmentId":0,"name":"test","id":6})
+执行切面方法
+Result(code: 200, msg: null, data: {"departmentId_text":"Department5","departmentId":5,"name":"test","id":7})
+执行切面方法
+Result(code: 200, msg: null, data: {"departmentId_text":"Department4","departmentId":4,"name":"test","id":8})
+执行切面方法
+Result(code: 200, msg: null, data: {"departmentId_text":"Department1","departmentId":1,"name":"test","id":9})
+
+Process finished with exit code 0
+```
+
 ## 关键特性
 - 零侵入性: POJO对象无需实现额外接口或字段。
 - 翻译注入: 业务代码仅返回原始数据，翻译逻辑完全由切面代理。
